@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 57
+names: ['10', '100', '20', '200', '500', 'Amantrel', 'B-9 plus', 'Fruit-Tella', 'Livogen', 'Mefenamic-Acid-HCL-Tablets', 'Sitagliptin-Phosphate', 'Zinc-Sulphate-Dispersible-Tablets', 'Zytee-L', 'alkem', 'amoxycilin-625', 'amoxycillin', 'calpol-500', 'calpol-625', 'chocolate', 'chupa-chups', 'cilnidipine', 'cipcal', 'cipcal-500', 'cipla ROKO', 'cofsils', 'coldact', 'currency', 'dairy-Milk', 'digene', 'disprin', 'dolo-65', 'dolo-650', 'evfon', 'eye-drops', 'ganfort eye drops', 'gemer sita ir 50-500-1', 'hifenac-p', 'hydrochloride-gel', 'iron-tonic', 'livogen-tablet', 'medicine', 'mefarc spas', 'metrogyl-DG-Gel', 'milky-bar', 'munch', 'neomycin', 'ointment', 'orafast', 'orofer xt plus', 'oseltamvir', 'paracetamol', 'ranitidine', 'rapiclav', 'refresh tear sodium eye drops', 'rifaximin', 'rifaximin tablets-400', 'syrup']
+
+roboflow:
+  workspace: medicine-dataset-6bmif
+  project: echo-sight-dataset-eg4p3
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/medicine-dataset-6bmif/echo-sight-dataset-eg4p3/dataset/3
