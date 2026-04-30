@@ -9,7 +9,7 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 
 app = Flask(__name__)
 
-model = YOLO("yolov8n.pt")  # use .pt explicitly
+model = YOLO("model/best.pt")  
 
 # -------- HTML inside Python --------
 HTML_PAGE = """
@@ -23,7 +23,7 @@ HTML_PAGE = """
 <h2>AI Medicine and Object Detection</h2>
 
 <video id="video" width="400" autoplay></video><br><br>
-<button onclick="capture()">📸 Capture & Detect</button>
+<button onclick="capture()"> Capture & Detect</button>
 
 <p id="result">Waiting...</p>
 
@@ -134,7 +134,7 @@ def detect():
     # Clean OCR text
     text = text.strip().replace("\n", " ")
     if len(text) > 100:
-        text = text[:100]  # limit length
+        text = text[:100]  
 
     return jsonify({
         "objects": detected,
